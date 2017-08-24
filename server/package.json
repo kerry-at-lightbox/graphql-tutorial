@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Example GraphQL Server",
+  "main": "index.js",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "graphql": "^0.10.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "curl -XPOST http://localhost:3001/graphql",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
