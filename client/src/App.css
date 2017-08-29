@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: darkslateblue;
 }
 
 .App-logo {
@@ -17,14 +18,19 @@
   font-size: large;
 }
 
-.Item-list {
-  list-style: none;
+.List {
+  margin: 0px;
+  background: darkslateblue;
+  align-content: flex-end;
 }
 
-.Item-list li {
-  border: 1px dotted gray;
+.Item-list {
+  list-style: none;
+  border-bottom: 1px dotted grey;
+  padding: 5px;
   width: 20%;
-  height: 3em;  
-  margin: auto;
+  height: 1em;
   text-align: left;
+  background: darkslateblue;
+  color: lightgray;
 }

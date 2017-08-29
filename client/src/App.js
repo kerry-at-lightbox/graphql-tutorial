@@ -32,8 +32,8 @@ const ChannelsList = ({ data: {loading, error, channels }}) => {
         return <p>{error.message}</p>;
     }
 
-    return <ul>
-        { channels.map( ch => <li key={ch.id}>{ch.name}</li> ) }
+    return <ul className="List">
+        { channels.map( ch => <li className="Item-list li" key={ch.id}>{ch.name}</li> ) }
     </ul>;
 };
 
@@ -57,7 +57,7 @@ class App extends Component {
               <img src={logo} className="App-logo" alt="logo" />
               <h2>Welcome to Apollo</h2>
             </div>
-              <ChannelsListWithData/>
+              <ChannelsListWithData />
           </div>
       </ApolloProvider>
     );
